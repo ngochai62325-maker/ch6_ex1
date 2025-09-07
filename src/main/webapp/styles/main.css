@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Toàn trang */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 90%;
+    background: linear-gradient(135deg, #e0f7fa, #fff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 3em auto;
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+header h1 {
+    font-size: 1.8em;
+    color: #00796b;
+    margin-bottom: 0.5em;
+}
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #0288d1;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #01579b;
+    text-decoration: underline;
+}
+
+/* Tiêu đề */
+h1, h2 {
+    color: #00796b;
+    margin-bottom: 1em;
+}
+
+/* Form */
+form {
+    margin-top: 1em;
+}
+label {
+    display: block;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    color: #444;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border: 1px solid #0288d1;
+    box-shadow: 0 0 6px rgba(2,136,209,0.4);
+    outline: none;
+}
+input[type="submit"] {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: #fff;
+    padding: 0.8em 1.6em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #009688, #00695c);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.9em;
+    color: #555;
+}
